@@ -103,12 +103,12 @@ am__append_5 = kill
 am__append_6 = kill.1
 #am__append_7 = kill.1
 #am__append_8 = \
-#	slabtop \
+	slabtop \
     watch \
 #	top/top
 
 #am__append_9 = \
-#	slabtop.1 \
+	slabtop.1 \
  	watch.1 \
 #	top/top.1
 
@@ -282,12 +282,12 @@ skill_OBJECTS = $(am_skill_OBJECTS)
 skill_LDADD = $(LDADD)
 skill_DEPENDENCIES = ./proc/libprocps.la $(am__DEPENDENCIES_2)
 am__slabtop_SOURCES_DIST = slabtop.c lib/strutils.c lib/fileutils.c
-#am_slabtop_OBJECTS = slabtop.$(OBJEXT) \
+am_slabtop_OBJECTS = slabtop.$(OBJEXT) \
 #	lib/strutils.$(OBJEXT) \
 #	lib/fileutils.$(OBJEXT)
 slabtop_OBJECTS = $(am_slabtop_OBJECTS)
 am__DEPENDENCIES_3 = ./proc/libprocps.la $(am__DEPENDENCIES_2)
-#slabtop_DEPENDENCIES = $(am__DEPENDENCIES_3)
+slabtop_DEPENDENCIES = $(am__DEPENDENCIES_3)
 am__snice_SOURCES_DIST = skill.c lib/strutils.c lib/fileutils.c \
 	lib/nsutils.c
 #am_snice_OBJECTS = skill.$(OBJEXT) \
@@ -841,8 +841,8 @@ dist_procpsng_DATA = \
 
 pidof_SOURCES = pidof.c lib/fileutils.c
 kill_SOURCES = skill.c lib/strutils.c lib/fileutils.c lib/nsutils.c
-#slabtop_SOURCES = slabtop.c lib/strutils.c lib/fileutils.c
-#slabtop_LDADD = $(LDADD) 
+slabtop_SOURCES = slabtop.c lib/strutils.c lib/fileutils.c
+slabtop_LDADD = $(LDADD) 
 watch_SOURCES = watch.c lib/strutils.c lib/fileutils.c
 watch_LDADD =  $(CYGWINFLAGS)
 #top_top_SOURCES = top/top.h top/top.c top/top_nls.h \
