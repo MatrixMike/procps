@@ -104,12 +104,12 @@ am__append_6 = kill.1
 #am__append_7 = kill.1
 #am__append_8 = \
 #	slabtop \
-#	watch \
+    watch \
 #	top/top
 
 #am__append_9 = \
 #	slabtop.1 \
-#	watch.1 \
+ 	watch.1 \
 #	top/top.1
 
 ##am__append_10 = lib/strverscmp.c
@@ -204,7 +204,7 @@ proc_libprocps_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	-o $@
 am__EXEEXT_1 = pidof$(EXEEXT)
 am__EXEEXT_2 = kill$(EXEEXT)
-#am__EXEEXT_3 = slabtop$(EXEEXT) watch$(EXEEXT) \
+am__EXEEXT_3 = slabtop$(EXEEXT) watch$(EXEEXT) \
 #	top/top$(EXEEXT)
 #am__EXEEXT_4 = skill$(EXEEXT) snice$(EXEEXT)
 am__EXEEXT_5 = lib/test_strtod_nol$(EXEEXT)
@@ -330,11 +330,11 @@ w_OBJECTS = $(am_w_OBJECTS)
 w_LDADD = $(LDADD)
 w_DEPENDENCIES = ./proc/libprocps.la $(am__DEPENDENCIES_2)
 am__watch_SOURCES_DIST = watch.c lib/strutils.c lib/fileutils.c
-#am_watch_OBJECTS = watch.$(OBJEXT) \
+am_watch_OBJECTS = watch.$(OBJEXT) \
 #	lib/strutils.$(OBJEXT) \
 #	lib/fileutils.$(OBJEXT)
 watch_OBJECTS = $(am_watch_OBJECTS)
-#watch_DEPENDENCIES = $(am__DEPENDENCIES_2)
+watch_DEPENDENCIES = $(am__DEPENDENCIES_2)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -843,8 +843,8 @@ pidof_SOURCES = pidof.c lib/fileutils.c
 kill_SOURCES = skill.c lib/strutils.c lib/fileutils.c lib/nsutils.c
 #slabtop_SOURCES = slabtop.c lib/strutils.c lib/fileutils.c
 #slabtop_LDADD = $(LDADD) 
-#watch_SOURCES = watch.c lib/strutils.c lib/fileutils.c
-#watch_LDADD =  $(CYGWINFLAGS)
+watch_SOURCES = watch.c lib/strutils.c lib/fileutils.c
+watch_LDADD =  $(CYGWINFLAGS)
 #top_top_SOURCES = top/top.h top/top.c top/top_nls.h \
 #	top/top_nls.c lib/fileutils.c \
 #	$(am__append_10)
