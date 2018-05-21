@@ -26,7 +26,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#define WITH_WATCH8BIT 1  // to try and control the compilation to work
+// #define WITH_WATCH8BIT 1  // to try and control the compilation to work
 
 #include "c.h"
 #include "config.h"
