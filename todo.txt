@@ -3,3 +3,10 @@ Mon 21 May 2018 15:29:08 AEST
 It appears that watch.c is present but not compiled in the make. I would like to address this issue.
 Also need to discover why cppcheck reports unused variables but when I remove them the compiler complains that they are not present...
 
+Thu May 24 06:06:32 AEST 2018 
+need to add a .gitignore to prevent executable files from being uploaded
+
+Find manual compile for free 
+<some tests being done on LM Maya? (13) >
+free would be really useful on older laptops with questionable (size) memory cards 
+
